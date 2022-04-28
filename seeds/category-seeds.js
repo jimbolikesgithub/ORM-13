@@ -1,6 +1,8 @@
 const { Category } = require('../models');
 
+// A better version of `seed.sql`
 const categoryData = [
+  // `category_name` will be passed as a STRING which does NOT allow for NULL values
   {
     category_name: 'Shirts',
   },

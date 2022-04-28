@@ -2,6 +2,7 @@ const { ProductTag } = require('../models');
 
 const productTagData = [
   {
+    // Passes as an int value and references the id 
     product_id: 1,
     tag_id: 6,
   },

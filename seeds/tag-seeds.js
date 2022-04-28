@@ -2,6 +2,7 @@ const { Tag } = require('../models');
 
 const tagData = [
   {
+    // Passes as a str value
     tag_name: 'rock music',
   },
   {

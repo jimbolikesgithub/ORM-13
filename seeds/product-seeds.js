@@ -2,9 +2,13 @@ const { Product } = require('../models');
 
 const productData = [
   {
+    // Passes a str value
     product_name: 'Plain T-Shirt',
+    // Passes a decimal value and validates the number has a decimal
     price: 14.99,
+    // Passes an int value and validates the number is a numeric
     stock: 14,
+    // Passes an int value and REFERENCES the id
     category_id: 1,
   },
   {
