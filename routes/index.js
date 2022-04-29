@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const apiRoutes = require('./api');
 
+// FIRST URL (localhost:3001/api)
 router.use('/api', apiRoutes);
 
 router.use((req, res) => {
@@ -8,3 +9,5 @@ router.use((req, res) => {
 });
 
 module.exports = router;
+
+// ^ DONE ^

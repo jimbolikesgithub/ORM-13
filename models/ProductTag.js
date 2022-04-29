@@ -13,6 +13,7 @@ ProductTag.init(
       primaryKey: true,
       autoIncrement: true
     },
+    // FOREIGN KEY
     product_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -32,3 +33,5 @@ ProductTag.init(
 );
 
 module.exports = ProductTag;
+
+// ^ DONE ^

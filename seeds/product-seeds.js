@@ -40,3 +40,5 @@ const productData = [
 const seedProducts = () => Product.bulkCreate(productData);
 
 module.exports = seedProducts;
+
+// ^ DONE ^
