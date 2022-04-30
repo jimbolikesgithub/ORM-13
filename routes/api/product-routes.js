@@ -10,7 +10,13 @@ router.get('/', async (req, res) => {
   try {
     const productData = await Product.findAll({
       // This is how you include TWO models in ONE include method
-      include: [{ model: Category, include: [Tag] }],
+      include: [
+        Category,
+        {
+          model: Tag,
+          through: ProductTag,
+        }
+      ]
     });
     res.status(200).json(productData);
   } catch (err) {
@@ -23,8 +29,17 @@ router.get('/:id', async (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
   try {
-    const productData = await Product.findByPk(req.params.id, {
-      include: [{ model: Category, include: [Tag] }]
+    const productData = await Product.findOne({
+      where: {
+        id: req.params.id,
+      },
+      include: [
+        Category,
+        {
+          model: Tag,
+          through: ProductTag,
+        }
+      ]
     });
     res.status(200).json(productData);
   } catch (err) {

@@ -21,7 +21,8 @@ Product.init(
       allowNull: false
     },
     price: {
-      type: DataTypes.DECIMAL,
+      // Accepts ONE or TWO arguments for precision (default would be 10, 0; CANNOT save decimal points data). `DECIMAL(10,2)` will save 2 decimal points 
+      type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
       validate: {
         isDecimal: true
@@ -41,6 +42,7 @@ Product.init(
       references: {
         model: 'category',
         key: 'id',
+        // This allows the user to pass in an id which already exist without throwing a `SequelizeUniqueConstraintError`
         unique: false
       }
     }
@@ -57,3 +59,5 @@ Product.init(
 module.exports = Product;
 
 // ^ DONE ^
+
+// SOURCE FOR `DECIMAL(10, 2): https://stackoverflow.com/questions/50354817/sequelize-decimal-data-save-with-2-decimal-points

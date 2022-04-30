@@ -12,6 +12,7 @@ Product.belongsTo(Category, {
   // Defines association starting with Product
   // `category_id` references the `Category` `id`, and is listed in `Product.js`
   foreignKey: 'category_id',
+  onDelete: 'CASCADE',
 })
 // Categories have many Products
 // MUST ESTABLISH THE BACKWARDS (DOES THE CATEGORY HAVE MANY PRODUCTS?)
@@ -22,24 +23,16 @@ Category.hasMany(Product, {
 // Products belongToMany Tags (through ProductTag (model))
 Product.belongsToMany(Tag, {
   // THIRD TABLE TO STORE FOREIGN KEYS
-  through: {
-    model: ProductTag,
-    unique: false
-  },
-  // Define alias for retrieved data
-  as: 'product_belongs_tag'
+  through: ProductTag,
+    foreignKey: 'product_id',
 })
 
 // Tags belongToMany Products (through ProductTag (model))
 // MUST ESTABLISH THE BACKWARDS (DOES THE TAG BELONG TO MANY PRODUCTS?)
 Tag.belongsToMany(Product, {
   // THIRD TABLE TO STORE FOREIGN KEYS
-  through: {
-    model:ProductTag,
-    unique: false
-  },
-  // Define alias for retrieved data
-  as: 'tag_belongs_product'
+  through: ProductTag,
+    foreignKey: 'tag_id',
 })
 
 module.exports = {
@@ -52,3 +45,14 @@ module.exports = {
 // note: Notice how there's NO `product-tag.js` (was JOINED)
 
 // ^ DONE ^
+
+// ANOTHER METHOD I FOUND PERSONALLY
+// Tag.belongsToMany(Product, {
+//   // THIRD TABLE TO STORE FOREIGN KEYS
+//   through: {
+//     model:ProductTag,
+//     unique: false
+//   },
+//   // Define alias for retrieved data
+//   as: 'tag_belongs_product'
+// })
