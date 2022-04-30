@@ -35,8 +35,8 @@ https://github.com/jimbolikesgithub/ORM-13<br/>
 
 Video(s)
 ----------
-![Video](https://drive.google.com/file/d/1HsE15X0qMujzaVw2UmDW5rwURlpZxWWm/view?usp=sharing)<br/>
-![Video](https://drive.google.com/file/d/1xnquq5kUNo95ruDsBJFq21wdqR9ddJh0/view?usp=sharing)<br/>
+https://drive.google.com/file/d/1HsE15X0qMujzaVw2UmDW5rwURlpZxWWm/view?usp=sharing<br/>
+https://drive.google.com/file/d/1xnquq5kUNo95ruDsBJFq21wdqR9ddJh0/view?usp=sharing<br/>
 
 
 Screenshot - 
