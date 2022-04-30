@@ -30,22 +30,21 @@ package.json
 
 GitHub 
 ----------
-https://github.com/jimbolikesgithub/Employee-Tracker-12<br/>
+https://github.com/jimbolikesgithub/ORM-13<br/>
 
 
 Video(s)
 ----------
-![Video]()<br/>
-![Video]()<br/>
+![Video](https://drive.google.com/file/d/1HsE15X0qMujzaVw2UmDW5rwURlpZxWWm/view?usp=sharing)<br/>
+![Video](https://drive.google.com/file/d/1xnquq5kUNo95ruDsBJFq21wdqR9ddJh0/view?usp=sharing)<br/>
 
 
 Screenshot - 
 ----------
-
+![ORM-13-Screenshot](https://user-images.githubusercontent.com/97565085/166087128-a7355ffe-1513-4c85-a733-ca5a3011c591.png)
 
 
 Acknowledgements
 ----------------
 AskBCS
-Tutor
 Seamona Stewart (Host)
