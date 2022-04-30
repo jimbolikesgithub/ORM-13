@@ -1,5 +1,7 @@
 # ORM-13 INSTRUCTIONS
 
+<!-- COMPLETE -->
+
 <!-- DONE -->
 1. Open and read README.md
 <!-- DONE -->
@@ -31,3 +33,5 @@
 9. Follow the 'Seed the Database' instructions on `README.md`
 <!-- DONE -->
 10. Follow the 'Sync Sequelize to the Database on Server Start' instructions on `README.md`
+
+<!-- COMPLETE -->
