@@ -27,9 +27,7 @@
     * `category-routes.js`
     * `product-routes.js`
     * `tag-routes.js`
+<!-- DONE -->
 9. Follow the 'Seed the Database' instructions on `README.md`
+<!-- DONE -->
 10. Follow the 'Sync Sequelize to the Database on Server Start' instructions on `README.md`
-    
- <!-- WHAT DOES `req.body` DO? FIGURE THIS OUT ON FRIDAY!!! -->
-
-

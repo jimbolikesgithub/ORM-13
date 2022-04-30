@@ -15,6 +15,7 @@ Category.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
+      // Will give an id of 1, 2, 3... and so on AUTOMATICALLY
       autoIncrement: true
     },
     category_name: {

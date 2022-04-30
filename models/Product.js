@@ -21,7 +21,7 @@ Product.init(
       allowNull: false
     },
     price: {
-      // Accepts ONE or TWO arguments for precision (default would be 10, 0; CANNOT save decimal points data). `DECIMAL(10,2)` will save 2 decimal points 
+      // Accepts ONE or TWO arguments for precision (default would be 10, 0; CANNOT save decimal points data). `DECIMAL(10,2)` will save 2 decimal points (ex. 29.99, 12.99, 90.00)
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
       validate: {

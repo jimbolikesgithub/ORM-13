@@ -17,3 +17,5 @@ sequelize.sync({ force: false }).then(() => {
      console.log(`App listening on port ${PORT}!`);
    })
 });
+
+// note: All seeded tables WORK when running `npm run seed` in node, `USE ecommerce_db;`, `SHOW TABLES;`, and SELECT * FROM [table name];` in MySQL
