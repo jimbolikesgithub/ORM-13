@@ -46,5 +46,5 @@ Screenshot -
 
 Acknowledgements
 ----------------
-AskBCS
-Seamona Stewart (Host)
+AskBCS<br/>
+Seamona Stewart (Host)<br/>
